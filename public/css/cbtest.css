@@ -22,6 +22,8 @@
 }
 .cbt .cstop .ct1{
     margin-left: 30px;
+    width: auto;
+    margin-right: 40px;
 }
 .cbt .cstop .ct1 a{
     font-size: 20px;
