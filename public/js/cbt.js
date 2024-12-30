@@ -34,6 +34,7 @@ document.addEventListener("DOMContentLoaded", async () => {
           question: q.questionText,
           options: q.options,
           correctAnswer: q.correctOptionId,
+          title: exam.title,
         }))
       );
 
