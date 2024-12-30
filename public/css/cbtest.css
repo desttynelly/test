@@ -93,8 +93,7 @@
     display: flex;
     width: 49%;
     /* height: 50px; */
-    padding-left: 10px;
-    padding-top: 10px;
+    padding: 10px 10px;
     background-color: #6d6a6a8c;
 }
 .cbt .dtest .answer .danswer:hover {
@@ -137,6 +136,7 @@
     width: 30px;
     text-align: center;
     border-radius: 50px;
+    margin-bottom: 10px;
 }
 .cbt .dtest .pick-num .fob{
 
