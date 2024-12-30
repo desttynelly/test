@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>CBT App</title>
+  <link rel="stylesheet" href="/css/test.css">
+</head>
+<body>
+  <div id="app">
+    <div id="login-section">
+      <h1>Login</h1>
+      <input type="text" id="username" placeholder="Enter your name">
+      <button id="login-btn">Start Test</button>
+    </div>
+
+    <div id="quiz-section" style="display: none;">
+      <h2 id="question-title"></h2>
+      <div id="options"></div>
+      <button id="next-btn" style="display: none;">Next</button>
+    </div>
+
+    <div id="result-section" style="display: none;">
+      <h1>Test Completed</h1>
+      <p id="score"></p>
+    </div>
+  </div>
+
+  <script src="/js/test.js"></script>
+</body>
+</html>

@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- Boxicons -->
+	<link href='https://unpkg.com/boxicons@2.0.9/css/boxicons.min.css' rel='stylesheet'>
+	<!-- My CSS -->
+	<link rel="stylesheet" href="/css/all-dashboard.css">
+	<link rel="stylesheet" href="/css/dash.css">
+
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+	  href="https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;600;700;800&family=Poppins:wght@400;500&display=swap"
+	  rel="stylesheet">
+
+	<title>AdminHub</title>
+</head>
+<body>
+
+
+
+	<div class="top-nav">
+		<div class="ham">
+
+			<img class="closee" src="/images/hamburger-svgrepo-com.png" alt="">
+			<img class="open" src="/images/close-svgrepo-com (1).png" alt="">
+		</div>
+		<div class="icons">
+
+			<a ><img src="/images/grid-svgrepo-com.png" alt=""></a>
+			<a ><img src="/images/grid-svgrepo-com.png" alt=""></a>
+			<a href="/dashboard/profile"><img src="/images/profile-1341-svgrepo-com.png" alt=""></a>
+		</div>
+	</div>
+	<div class="side-bar">
+		<div class="top">
+			<p>Dashboard</p>
+		</div>
+
+		<ul class="dash-links">
+			<a href="/dashboard/dashboard" id="there"><li>Dashboard</li></a>
+			<a href=""><li>Courses</li></a>
+			<a href=""><li>Messages</li></a>
+			<a href="/dashboard/exams/cbtest"><li>Exams</li></a>
+		</ul>
+	</div>
+
+
+
+
+
+	<div class="all">
+
+		<div class="dashboard">
+
+
+			<div class="cor-card">
+		<div class="course-card">
+			<p class="course-head">Front End</p>
+
+			<img src="/images/AI.jpg" alt="">
+
+			<div class="time">
+				<div class="load">
+					<div class="inner-load"></div>
+				</div>
+
+				<p>Exams</p>
+			</div>
+		</div>
+
+
+		<div class="course-graph">
+
+			<div class="d-graph">
+
+			</div>
+		</div>
+
+	</div>
+
+
+	<div class="down">
+
+	</div>
+
+		
+		
+		</div>
+
+		
+	</div>
+
+
+	<script>
+		document.querySelector(".open").addEventListener("click", function(){
+    // window.alert("llll")qu\
+    document.querySelector(".open").classList.add("active")
+    document.querySelector(".closee").classList.add("active")
+    document.querySelector(".side-bar").classList.add("active")
+    document.querySelector(".top-nav").classList.add("active")
+    document.querySelector(".all").classList.add("active")
+    document.querySelector(".dashboard").classList.add("active")
+})
+document.querySelector(".closee").addEventListener("click", function(){
+    // window.alert("llll")
+    document.querySelector(".open").classList.remove("active")
+    document.querySelector(".closee").classList.remove("active")
+    document.querySelector(".side-bar").classList.remove("active")
+    document.querySelector(".top-nav").classList.remove("active")
+    document.querySelector(".all").classList.remove("active")
+    document.querySelector(".dashboard").classList.remove("active")
+})
+	</script>
+	
+
+	<script src="/js/dashh.js"></script>
+</body>
+</html>

@@ -1,0 +1,138 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@400;700&family=Poppins:wght@400;500;600;700&display=swap');
+
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'poppins', sans-serif;
+	transition: all 0.3s ease-in-out;
+}
+
+a {
+	text-decoration: none;
+}
+
+li {
+	list-style: none;
+}
+
+:root {
+	--poppins: 'Poppins', sans-serif;
+	--lato: 'Lato', sans-serif;
+
+	--light: #F9F9F9;
+	--blue: #faae09;
+	--light-blue: #CFE8FF;
+	--grey: #eee;
+	--dark-grey: #AAAAAA;
+	--dark: #342E37;
+	--red: #DB504A;
+	--yellow: #ffa115;
+	--light-yellow: #FFF2C6;
+	--orange: #FD7238;
+	--light-orange: #FFE0D3;
+	--main: #ff9000;
+}
+
+html {
+	overflow-x: hidden;
+}
+
+body.dark {
+	--light: #0C0C1E;
+	--grey: #060714;
+	--dark: #FBFBFB;
+}
+
+body {
+	background: var(--grey);
+	overflow-x: hidden;
+}
+
+.all{
+
+    margin-top: 100px;
+    margin-left: 350px;
+	width: 70%;
+	background-color: #060714;
+}
+.all.active{
+    margin-left: 0px;
+	width: 100%;
+}
+
+
+.top-nav{
+	position: fixed;
+	background-color: #74460b;
+	width: 78%;
+	display: flex;
+	padding: 10px 0px;
+	margin-left: 300px;
+	transition: all 0.3s ease-in-out;
+}
+.top-nav.active{
+	width: 100%;
+	margin-left: 0px;
+}
+.top-nav img{
+	width: 30px;
+	cursor: pointer;
+}
+.top-nav .ham{
+	margin-left: 30px;
+}
+.top-nav .ham .open{
+	display: block;
+}
+.top-nav .ham .open.active{
+	display: none;
+}
+.top-nav .ham .closee{
+	display: none;
+}
+.top-nav .ham .closee.active{
+	display: block;
+}
+
+.top-nav .icons{
+	margin-left: 70%;
+}
+
+.top-nav .icons img{
+	margin-left: 40px;
+}
+
+.side-bar{
+	position: fixed;
+	margin-top: 0px;
+	background-color: var(--main);
+	width: 300px;
+	height: 100vh;
+	transition: all 0.3s ease-in-out;
+}
+.side-bar.active{
+	margin-left: -300px;
+}
+.side-bar .top{
+	border-bottom: 1px solid black;
+	padding: 20px 0px;
+}
+.side-bar .top p{
+	font-size: 30px;
+	margin-left: 30px;
+}
+
+.side-bar .dash-links{
+	background-color: #aaaaaa00;
+}
+
+.side-bar .dash-links #there li{
+	margin-left: 20px;
+}
+.side-bar .dash-links li {
+	margin-bottom: 10px;
+	background-color: #aca17e;
+	padding: 20px 20px;
+	color: #060714;
+}
