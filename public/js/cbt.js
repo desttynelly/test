@@ -15,6 +15,7 @@ document.addEventListener("DOMContentLoaded", async () => {
   const prevBtn = document.getElementById("prev-btn");
   const nextBtn = document.getElementById("next-btn");
   const submitBtn = document.getElementById("submit-btn");
+  const subject = document.querySelector(".subject");
 
   let questions = [];
   let currentQuestionIndex = 0;
@@ -50,7 +51,7 @@ document.addEventListener("DOMContentLoaded", async () => {
     const currentQuestion = questions[currentQuestionIndex];
     questionNumberElement.textContent = currentQuestionIndex + 1;
     questionTextElement.textContent = currentQuestion.question;
-
+    subject.textContent = currentQuestion.title;
     // Clear previous options
     answerOptionsElement.innerHTML = "";
 
